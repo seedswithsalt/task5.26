@@ -3,9 +3,6 @@ import java.util.Scanner;
 public class Main {
 
     public static void main(String[] args) {
-        new Main().run();
-    }
-    private void run() {
         Scanner scanner = new Scanner(System.in);
         System.out.print("Введите высоту h (нечётная, >= 5) ");
         int h = scanner.nextInt();
@@ -13,7 +10,7 @@ public class Main {
              System.out.print("Неверное число, попробуйте снова");
         else
             print(h); }
-        private void print (int h){
+        public static void print(int h){
             int w = h;
             int firstBackSlash = 2;
             int firstSlash = w - 2;
